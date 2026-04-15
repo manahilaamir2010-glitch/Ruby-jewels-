@@ -1,18 +1,56 @@
-        <div class="product-card">
-            <img src="IMG_1694.jpeg">
-            <h3>Silver Butterfly Set</h3>
-            <p style="color: var(--gold); font-weight: bold;">Coming Soon</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby | Fine Jewelry</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --wine-red: #722F37; --gold: #C5A059; --cream: #F9F7F2; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: var(--cream); color: #333; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; border-bottom: 1px solid #eee; }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--wine-red); letter-spacing: 3px; font-weight: bold; }
+        .hero { height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('IMG_1646.jpeg');
+                background-size: cover; background-position: center; }
+        .section-title { text-align: center; padding: 60px 0 20px; font-family: 'Playfair Display', serif; color: var(--wine-red); font-size: 2.5rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 0 5% 80px; }
+        .product-card { background: white; padding: 20px; text-align: center; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.05); }
+        .product-card img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
+        .product-card h3 { font-family: 'Playfair Display', serif; margin: 10px 0 5px; font-size: 1.2rem; }
+        .price { color: var(--gold); font-weight: bold; font-size: 1.3rem; margin-top: 5px; }
+        footer { text-align: center; padding: 50px; background: var(--wine-red); color: white; }
+    </style>
+</head>
+<body>
+    <nav><div class="logo">RUBY</div></nav>
+    <section class="hero">
+        <div>
+            <h1 style="font-family: 'Playfair Display'; font-size: 3.5rem;">The Signature Collection</h1>
+            <p style="letter-spacing: 2px;">LUXURY IN EVERY DETAIL</p>
         </div>
-        <div class="product-card">
-            <img src="IMG_1695.jpeg">
-            <h3>Crystal Accents</h3>
-            <p style="color: var(--gold); font-weight: bold;">Coming Soon</p>
-        </div>
-        <div class="product-card">
-            <img src="IMG_1696.jpeg">
-            <h3>Elegant Bands</h3>
-            <p style="color: var(--gold); font-weight: bold;">Coming Soon</p>
-        </div>
-    <footer style="text-align: center; padding: 40px; background: var(--wine-red); color: white;">RUBY FINE JEWELRY &copy; 2026</footer>
+    </section>
+
+    <h2 class="section-title">Our Collection</h2>
+    
+    <div class="product-grid">
+        <div class="product-card"><img src="IMG_1647.jpeg"><h3>Rose Gold Butterfly</h3><p class="price">$1,200</p></div>
+        <div class="product-card"><img src="IMG_1648.jpeg"><h3>Golden Crown Rings</h3><p class="price">$850</p></div>
+        <div class="product-card"><img src="IMG_1689.jpeg"><h3>Crystal Link Bracelet</h3><p class="price">$2,100</p></div>
+        <div class="product-card"><img src="IMG_1694.jpeg"><h3>Ornate Bands</h3><p class="price">$950</p></div>
+        <div class="product-card"><img src="IMG_1695.jpeg"><h3>Diamond Halo</h3><p class="price">$3,400</p></div>
+        <div class="product-card"><img src="IMG_1696.jpeg"><h3>Shimmering Accents</h3><p class="price">$1,550</p></div>
+        <div class="product-card"><img src="IMG_1697.jpeg"><h3>Vintage Pearl</h3><p class="price">$1,800</p></div>
+        <div class="product-card"><img src="IMG_1700.jpeg"><h3>Minimalist Gold</h3><p class="price">$600</p></div>
+        <div class="product-card"><img src="IMG_1701.jpeg"><h3>Modern Eternity</h3><p class="price">$2,500</p></div>
+        <div class="product-card"><img src="IMG_1702.jpeg"><h3>Royal Ruby Set</h3><p class="price">$4,200</p></div>
+        <div class="product-card"><img src="IMG_1703.jpeg"><h3>Petal Pink Series</h3><p class="price">$1,350</p></div>
+        <div class="product-card"><img src="IMG_1704.jpeg"><h3>Luxe Statement</h3><p class="price">$2,900</p></div>
+        <div class="product-card"><img src="IMG_1705.jpeg"><h3>Gold Pendant</h3><p class="price">$1,100</p></div>
+        <div class="product-card"><img src="IMG_1706.jpeg"><h3>Faceted Ring</h3><p class="price">$750</p></div>
+        <div class="product-card"><img src="IMG_1707.jpeg"><h3>Bespoke Earrings</h3><p class="price">$1,950</p></div>
+    </div>
+
+    <footer>RUBY FINE JEWELRY &copy; 2026</footer>
 </body>
 </html>
