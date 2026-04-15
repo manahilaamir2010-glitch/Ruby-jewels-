@@ -3,53 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby | Fine Jewelry</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>BOXIQUE | Curated Gift Boxes</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        :root { --wine-red: #722F37; --gold: #C5A059; --cream: #F9F7F2; }
-        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: var(--cream); color: #333; }
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; border-bottom: 1px solid #eee; }
-        .logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--wine-red); letter-spacing: 3px; font-weight: bold; }
-        .hero { height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
-                background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('IMG_1646.jpeg');
-                background-size: cover; background-position: center; }
-        .section-title { text-align: center; padding: 60px 0 20px; font-family: 'Playfair Display', serif; color: var(--wine-red); font-size: 2.5rem; }
-        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 0 5% 80px; }
-        .product-card { background: white; padding: 20px; text-align: center; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.05); }
-        .product-card img { width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin-bottom: 15px; }
-        .product-card h3 { font-family: 'Playfair Display', serif; margin: 10px 0 5px; font-size: 1.2rem; }
-        .price { color: var(--gold); font-weight: bold; font-size: 1.3rem; margin-top: 5px; }
-        footer { text-align: center; padding: 50px; background: var(--wine-red); color: white; }
+        :root { 
+            --boxique-gold: #D4AF37; /* A refined gold based on your logo */
+            --soft-white: #FCFAFA; 
+            --text-dark: #333;
+            --elegant-font: 'DM Serif Display', serif;
+            --clean-font: 'Montserrat', sans-serif;
+        }
+        
+        body { margin: 0; font-family: var(--clean-font); background-color: var(--soft-white); color: var(--text-dark); }
+        
+        /* Navigation (Logo Bar) */
+        nav { display: flex; justify-content: center; align-items: center; padding: 40px 5%; background: white; }
+        
+        /* To create the 'B O X I Q U E' centered elegant text based on the logo image_6.png */
+        .brand-text { font-family: var(--elegant-font); font-size: 2.8rem; color: var(--boxique-gold); text-align: center; letter-spacing: 5px; text-transform: uppercase; }
+
+        /* The 'R' in a circle (Registered Trademark) */
+        .trademark { vertical-align: super; font-size: 1rem; color: #999; font-family: sans-serif; }
+
+        /* Hero / Headline Section */
+        .hero { 
+            height: 45vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+            /* Placeholder Background: you can replace this with your best Box image later */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('IMG_1707.jpeg');
+            background-size: cover; background-position: center; 
+        }
+
+        .hero h1 { font-family: var(--elegant-font); font-size: 4rem; margin-bottom: 10px; }
+        .hero p { letter-spacing: 3px; font-size: 0.9rem; text-transform: uppercase; }
+
+        /* Collection Title */
+        .section-title { text-align: center; padding: 80px 0 30px; font-family: var(--elegant-font); font-size: 2.5rem; color: #111; position: relative;}
+        
+        /* Product Grid */
+        .gift-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 50px; padding: 0 8% 120px; }
+        
+        /* Individual Gift Cards */
+        .gift-card { background: white; border: 1px solid #eee; overflow: hidden; border-radius: 8px; transition: 0.4s; text-align: center; padding-bottom: 30px; position: relative; }
+        .gift-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        
+        /* The Image */
+        .image-box { width: 100%; height: 380px; overflow: hidden; }
+        .gift-card img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Details (Text and Price) */
+        .gift-details { padding: 0 15px; }
+        .gift-card h3 { font-family: var(--elegant-font); font-size: 1.6rem; margin: 30px 0 10px; color: #111; }
+        .price { color: var(--boxique-gold); font-weight: 500; font-size: 1.3rem; margin-bottom: 20px;}
+        
+        /* Button style matching the minimal high-end feel */
+        .shop-btn { display: inline-block; padding: 12px 30px; border: 2px solid var(--text-dark); color: var(--text-dark); text-decoration: none; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 500; transition: 0.3s;}
+        .shop-btn:hover { background: var(--text-dark); color: white; }
+
+        /* Footer */
+        footer { background: white; color: var(--boxique-gold); text-align: center; padding: 80px 20px; font-size: 0.8rem; letter-spacing: 1px;}
+        .footer-logo { font-family: var(--elegant-font); font-size: 1.8rem; color: var(--boxique-gold); margin-bottom: 20px; display: block; letter-spacing: 3px; text-transform: uppercase; }
+
     </style>
 </head>
 <body>
-    <nav><div class="logo">RUBY</div></nav>
+
+    <nav>
+        <div class="brand-text">B O X I Q U E<span class="trademark">®</span></div>
+    </nav>
+
     <section class="hero">
         <div>
-            <h1 style="font-family: 'Playfair Display'; font-size: 3.5rem;">The Signature Collection</h1>
-            <p style="letter-spacing: 2px;">LUXURY IN EVERY DETAIL</p>
+            <h1>Curated Gifting, Perfectly Packaged.</h1>
+            <p>Elevating Every Occasion</p>
         </div>
     </section>
 
-    <h2 class="section-title">Our Collection</h2>
-    
-    <div class="product-grid">
-        <div class="product-card"><img src="IMG_1647.jpeg"><h3>Rose Gold Butterfly</h3><p class="price">Rs.2000</p></div>
-        <div class="product-card"><img src="IMG_1648.jpeg"><h3>Golden Crown Rings</h3><p class="price">Rs6000</p></div>
-        <div class="product-card"><img src="IMG_1689.jpeg"><h3>Crystal Link Bracelet</h3><p class="price">Rs3000</p></div>
-        <div class="product-card"><img src="IMG_1695.jpeg"><h3>Diamond Halo</h3><p class="price"></p></div>
-        <div class="product-card"><img src="IMG_1696.jpeg"><h3>Shimmering Accents</h3><p class="price">$1,550</p></div>
-        <div class="product-card"><img src="IMG_1697.jpeg"><h3>Vintage Pearl</h3><p class="price">$1,800</p></div>
-        <div class="product-card"><img src="IMG_1700.jpeg"><h3>Minimalist Gold</h3><p class="price">$600</p></div>
-        <div class="product-card"><img src="IMG_1701.jpeg"><h3>Modern Eternity</h3><p class="price">$2,500</p></div>
-        <div class="product-card"><img src="IMG_1702.jpeg"><h3>Royal Ruby Set</h3><p class="price">$4,200</p></div>
-        <div class="product-card"><img src="IMG_1703.jpeg"><h3>Petal Pink Series</h3><p class="price">$1,350</p></div>
-        <div class="product-card"><img src="IMG_1704.jpeg"><h3>Luxe Statement</h3><p class="price">$2,900</p></div>
-        <div class="product-card"><img src="IMG_1705.jpeg"><h3>Gold Pendant</h3><p class="price">$1,100</p></div>
-        <div class="product-card"><img src="IMG_1706.jpeg"><h3>Faceted Ring</h3><p class="price">$750</p></div>
-        <div class="product-card"><img src="IMG_1707.jpeg"><h3>Bespoke Earrings</h3><p class="price">$1,950</p></div>
+    <h2 class="section-title">Explore The Collection</h2>
+
+    <div class="gift-grid">
+        <div class="gift-card">
+            <div class="image-box"><img src="IMG_1705.jpeg"></div>
+            <div class="gift-details">
+                <h3>The Grand Celebration</h3>
+                <p class="price">$195.00</p>
+                <a href="#" class="shop-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="gift-card">
+            <div class="image-box"><img src="IMG_1706.jpeg"></div>
+            <div class="gift-details">
+                <h3>Golden Serenity Set</h3>
+                <p class="price">$220.00</p>
+                <a href="#" class="shop-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="gift-card">
+            <div class="image-box"><img src="IMG_1707.jpeg"></div>
+            <div class="gift-details">
+                <h3>Velvet & Pearl Keepsake</h3>
+                <p class="price">$145.00</p>
+                <a href="#" class="shop-btn">View Details</a>
+            </div>
+        </div>
     </div>
 
-    <footer>RUBY FINE JEWELRY &copy; 2026</footer>
+    <footer>
+        <span class="footer-logo">BOXIQUE</span>
+        Curated Gifting • Worldwide Shipping • &copy; 2026
+    </footer>
+
 </body>
 </html>
